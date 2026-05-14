@@ -83,3 +83,4 @@ Or connect your GitHub repo to Vercel — it auto-detects Next.js and deploys on
 | `/blog` | Blog |
 | `/newsletter` | Newsletter |
 | `/contact` | Contact Us |
+
