@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/0.~7vkq16eq3z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],""]
+3:I[97367,["/_next/static/chunks/0.~7vkq16eq3z.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-navy flex items-center justify-center px-[5%]","children":["$","div",null,{"className":"text-center max-w-[560px]","children":[["$","span",null,{"className":"block font-serif text-[6rem] font-black text-gold/30 leading-none mb-4","children":"404"}],["$","h1",null,{"className":"font-serif font-bold text-white text-4xl mb-4","children":"Page Not Found"}],["$","p",null,{"className":"text-white/60 text-lg leading-relaxed mb-10","children":"The page you're looking for doesn't exist or may have been moved. Let's get you back on track."}],["$","div",null,{"className":"flex gap-4 justify-center flex-wrap","children":[["$","$L2",null,{"href":"/","className":"btn-primary","children":"Back to Home →"}],["$","$L2",null,{"href":"/contact","className":"btn-outline-white","children":"Contact Us"}]]}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"OFjJHM_lbmsyLmNCFGFSv"}
+5:null
