@@ -6,11 +6,7 @@ interface ContactStripProps {
   dark?: boolean;
 }
 
-export default function ContactStrip({
-  title = "We're Here to Help.",
-  subtitle = "Have questions or need support? Reach out — we'd love to hear from you.",
-  dark = true,
-}: ContactStripProps) {
+export default function ContactStrip({ title="We're Here to Help.", subtitle="Have questions or need support? Reach out — we'd love to hear from you.", dark=true }: ContactStripProps) {
   return (
     <div className={`px-[8%] py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 flex-wrap ${dark ? "bg-navy" : "bg-cream-warm border-t border-navy/12"}`}>
       <div>
