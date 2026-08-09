@@ -14,16 +14,12 @@ export const EMAIL_MINISTRY = "Stayoutforgoodministry@gmail.com";
 export const ADDRESS_MINISTRY = "6308 Sweetwater Dr, Lakeland, FL 33811";
 export const ADDRESS_DONATIONS = "105 Elizabeth Ave, Madison, MS 39110";
 
-// ── PLACEHOLDERS — replace these when ready ──────────────────────────────────
-// Square: Create a payment link at squareup.com/dashboard → Online Checkout
-// Replace the URL below with your Square payment link
+// Square donation link — replace with your actual Square payment link
 export const SQUARE_DONATE_URL = "https://square.link/YOUR_SQUARE_LINK_HERE";
 
-// Formspree: Go to formspree.io, create a form, copy the form ID (e.g. xpwzabcd)
-// Replace YOUR_FORMSPREE_ID below with your actual ID
-export const FORMSPREE_TRAINING_ID = "YOUR_FORMSPREE_ID";
-export const FORMSPREE_TRAINING_URL = `https://formspree.io/f/${FORMSPREE_TRAINING_ID}`;
-// ─────────────────────────────────────────────────────────────────────────────
+// Formspree form IDs
+export const FORMSPREE_CONTACT_URL = "https://formspree.io/f/mwleloln";
+export const FORMSPREE_TRAINING_URL = "https://formspree.io/f/mvkpkakq";
 
 export const NAV_LINKS = [
   { label: "About", href: "/about" },

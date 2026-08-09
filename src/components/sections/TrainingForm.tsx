@@ -1,17 +1,17 @@
 "use client";
 import { useState } from "react";
-// PLACEHOLDER: Replace YOUR_FORMSPREE_ID with your actual Formspree form ID
-// Go to formspree.io → create a form → copy the ID (e.g. xpwzabcd)
-// Then update FORMSPREE_TRAINING_URL in src/lib/utils.ts
-const FORMSPREE_URL = "https://formspree.io/f/YOUR_FORMSPREE_ID";
+
+const FORMSPREE_URL = "https://formspree.io/f/mvkpkakq";
 
 export default function TrainingForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
+    setError(false);
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
@@ -22,9 +22,11 @@ export default function TrainingForm() {
       });
       if (res.ok) {
         setSubmitted(true);
+      } else {
+        setError(true);
       }
     } catch {
-      // Handle error silently — user can try again
+      setError(true);
     }
     setLoading(false);
   }
@@ -74,8 +76,8 @@ export default function TrainingForm() {
         </div>
         <div className="flex flex-col gap-1">
           <label className="form-label">I Am Representing *</label>
-          <select className="form-input bg-navy/40" name="representing" required>
-            <option value="">Select one...</option>
+          <select className="form-input bg-navy/40" name="representing" required defaultValue="">
+            <option value="" disabled>Select one...</option>
             <option>A Church or Congregation</option>
             <option>A Jail or Prison Ministry</option>
             <option>A Nonprofit or Community Organization</option>
@@ -91,6 +93,9 @@ export default function TrainingForm() {
           <label className="form-label">Any Questions or Notes</label>
           <textarea className="form-input min-h-[80px] resize-y" name="notes" placeholder="Any questions or special accommodations..." />
         </div>
+        {error && (
+          <p className="text-red-400 text-sm text-center">Something went wrong. Please try again or email us directly.</p>
+        )}
         <button
           type="submit"
           disabled={loading}
